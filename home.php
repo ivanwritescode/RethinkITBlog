@@ -29,8 +29,8 @@
                     </div>
                     <div class="card-footer">
                         <p>
-                            <button onclick="deletePost(<?php echo $post['id']; ?>)">DELETE</button>
-                            <button>EDIT</button>
+                            <a href="#" onclick="deletePost(<?php echo $post['id']; ?>)">DELETE</a>
+                            <a href="blogposts/updatepostform.php?blogpost_id=<?php echo $post['id']; ?>">EDIT</a>
                         </p>
                     </div>
                 </div>
