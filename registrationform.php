@@ -26,7 +26,7 @@
                     <input name="confirmpassword" type="password">
                     <button>REGISTER</button>
                 </form>
-                Return to the<a href="">LOGIN PAGE</a>
+                Return to the<a href="loginform.php">LOGIN PAGE</a>
             </div>
         </div>
 	</main>
