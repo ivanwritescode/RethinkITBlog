@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MiniBlog</title>
+	<title>MiniBlog - Register</title>
 	<link rel="stylesheet" href="../../public/styles/reset.css">
 	<link rel="stylesheet" href="../../public/styles/styles.css">
 </head>
