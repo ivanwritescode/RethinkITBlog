@@ -14,6 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($conn->query($sql) === TRUE) {
         // Display if the post creation was successful
         echo "Post created successfully!";
+        header("Location: ../home.php");
+        exit(); // just to make sure to exit the script after redirection
+
     } else {
         // Display if an error occurred while creating the post
         echo "Error: " . $sql . "<br>" . $conn->error;
