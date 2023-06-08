@@ -25,7 +25,7 @@
                 </div>
                 <form action="register.php" method="POST">
                     <p class="form-group">
-                        <input name="username" type="text" placeholder="Enter Email">
+                        <input name="username" type="text" placeholder="Enter Username">
                     </p>
                     <p class="form-group">
                         <input name="email" type="email" placeholder="Enter Email">
