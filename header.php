@@ -31,7 +31,7 @@ if (isset($_SESSION['id'])) {
         echo '    </div>';
         echo '    <div class="nav-links">';
         echo '        <a href="' . $basePath . 'home.php">Home</a>';
-        echo '        <a href="' . $basePath . 'logout.php">Logout</a>';
+        echo '        <a href="' . $basePath . 'accounts/logout.php">Logout</a>';
         echo '    </div>';
         echo '</header>';
     } else {
