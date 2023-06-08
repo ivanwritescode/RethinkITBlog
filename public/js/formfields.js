@@ -15,9 +15,15 @@ formGroups.forEach(formGroup => {
 
 
 // JavaScript code that dynamically updates textarea height based on the content
-const textarea = document.getElementById('content');
+function adjustTextareaHeight() {
+  const textarea = document.getElementById('content');
+  textarea.style.height = 'auto'; // Reset height to auto to recalculate height based on content
+  textarea.style.height = textarea.scrollHeight + 'px'; // Set the height to match the content
+}
 
-textarea.addEventListener('input', () => {
-textarea.style.height = 'auto'; // Reset height to auto to recalculate height based on content
-textarea.style.height = textarea.scrollHeight + 'px'; // Set the height to match the content
+window.addEventListener('DOMContentLoaded', () => {
+  adjustTextareaHeight(); // Adjust the textarea height on page load
+
+  const textarea = document.getElementById('myTextarea');
+  textarea.addEventListener('input', adjustTextareaHeight); // Adjust the textarea height on input
 });
