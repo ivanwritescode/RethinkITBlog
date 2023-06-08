@@ -44,6 +44,11 @@ body {
   margin-top: 1.5em;
 }
 
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
 .btn {
   padding: 5px 20px;
   color: #fff;
@@ -52,14 +57,50 @@ body {
   font-weight: 500;
 }
 
-a.btn-delete {
+.btn-delete {
   background-color: #c62828;
 }
 
-a.btn-edit {
+.btn-edit {
   background-color: #2e7d32;
 }
 
-a.btn-create {
+.btn-create {
   background-color: #2196f3;
+}
+
+.btn-submit {
+  background-color: #26a69a;
+}
+
+form label {
+  opacity: 0.5;
+}
+form label:focus {
+  opacity: 1;
+}
+form input {
+  background: transparent;
+  width: 100%;
+  border-bottom: 1px solid green;
+}
+form input:focus {
+  outline: none;
+}
+form textarea {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid green;
+}
+form textarea:focus {
+  outline: none;
+}
+
+.card.card-bg-inherit {
+  background-color: inherit;
+  border: 0;
+  box-shadow: none;
+}
+.card.card-bg-inherit textarea {
+  background-color: inherit;
 }/*# sourceMappingURL=styles.css.map */

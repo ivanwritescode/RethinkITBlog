@@ -1,6 +1,7 @@
 $btn-clr-delete:  #c62828;
 $btn-clr-edit: #2e7d32;
 $btn-clr-create: #2196f3;
+$btn-clr-submit: #26a69a;
 
 html {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
@@ -54,6 +55,11 @@ body {
     }
 }
 
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
 .btn {
     padding: 5px 20px; 
     color: #fff;
@@ -62,14 +68,58 @@ body {
     font-weight: 500;
 }
 
-a.btn-delete {
+.btn-delete {
     background-color: $btn-clr-delete;
 }
 
-a.btn-edit {
+.btn-edit {
     background-color: $btn-clr-edit;
 }
 
-a.btn-create {
+.btn-create {
     background-color: $btn-clr-create;
+}
+
+.btn-submit {
+    background-color: $btn-clr-submit;
+}
+
+form {
+    label {
+        opacity: .5;
+
+        &:focus {
+            opacity: 1;
+        }
+    }
+
+    input {
+        background: transparent;
+        width: 100%;
+        border-bottom: 1px solid green;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid green;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.card.card-bg-inherit {
+    background-color: inherit;
+    border: 0;
+    box-shadow: none;
+
+        textarea {
+            background-color: inherit;
+        }
 }
