@@ -16,22 +16,34 @@
 </head>
 <body>
 	<!-- <?php include '../../header.php'; ?> -->
-	<main>
-        <div>
-            <h1>Registration</h1>	
+    <div class="container">
+        <main>
+            <h1 class="section-title">Registration</h1>	
             <div class="card">
-                <h2>See the Registration Rules</h2>
+                <div class="card-header">
+                    <h2>See the Registration Rules</h2>
+                </div>
                 <form action="register.php" method="POST">
-                    <input name="username" type="text">
-                    <input name="email" type="email">
-                    <input name="password" type="password">
-                    <input name="confirmpassword" type="password">
-                    <button>REGISTER</button>
+                    <p class="form-group">
+                        <input name="username" type="text" placeholder="Enter Email">
+                    </p>
+                    <p class="form-group">
+                        <input name="email" type="email" placeholder="Enter Email">
+                    </p>
+                    <p class="form-group">
+                        <input name="password" type="password" placeholder="Enter Password">
+                    </p>
+                    <p class="form-group">
+                        <input name="confirmpassword" type="password" placeholder="Confirm Password">
+                    </p> 
+                    <button class="btn btn-submit">REGISTER</button>
                 </form>
-                Return to the<a href="../login/loginform.php">LOGIN PAGE</a>
+                <div class="card-footer">
+                    Return to the<a href="../login/loginform.php">LOGIN PAGE</a>
+                </div>
             </div>
-        </div>
-	</main>
+        </main>
+    </div>
 </body>
 </html>
 

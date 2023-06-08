@@ -142,3 +142,25 @@ form {
     color: #fff;
     margin-bottom: 1.5em;
 }
+
+.card-header {
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+    opacity: .5;
+}
+
+.card-footer {
+    font-size: .8rem;
+    
+    a { 
+        color: #fc6e10;
+        margin-left: .5em;
+        
+        &:hover {
+            opacity: .7;
+            text-decoration: underline;
+        }
+    }
+}
