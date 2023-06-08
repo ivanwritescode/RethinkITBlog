@@ -135,6 +135,12 @@ form textarea:focus {
   opacity: 0.5;
 }
 
+.card-body {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
 .card-footer {
   font-size: 0.8rem;
 }
