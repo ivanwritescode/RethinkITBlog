@@ -1,6 +1,9 @@
 <?php
 session_start(); // Start the session
 
+// Specify the base path here
+$basePath = "http://localhost/RethinkITBlog/";
+
 // Check if the user ID session variable is set
 if (isset($_SESSION['id'])) {
     // Session variable is set, the user is logged in
@@ -27,8 +30,8 @@ if (isset($_SESSION['id'])) {
         echo '        Hi ' . $username;
         echo '    </div>';
         echo '    <div class="nav-links">';
-        echo '        <a href="' . dirname($_SERVER['PHP_SELF']) . '/../home.php">Home</a>';
-        echo '        <a href="logout.php">Logout</a>';
+        echo '        <a href="' . $basePath . 'home.php">Home</a>';
+        echo '        <a href="' . $basePath . 'logout.php">Logout</a>';
         echo '    </div>';
         echo '</header>';
     } else {
@@ -41,8 +44,8 @@ if (isset($_SESSION['id'])) {
         echo '        Hi User';
         echo '    </div>';
         echo '    <div class="nav-links">';
-        echo '        <a href="' . dirname($_SERVER['PHP_SELF']) . '/../home.php">Home</a>';
-        echo '        <a href="logout.php">Logout</a>';
+        echo '        <a href="' . $basePath . 'home.php">Home</a>';
+        echo '        <a href="' . $basePath . 'accounts/logout.php">Logout</a>';
         echo '    </div>';
         echo '</header>';
     }
@@ -56,7 +59,7 @@ if (isset($_SESSION['id'])) {
     echo '        <h1>MiniBlog</h1>';
     echo '    </div>';
     echo '    <div class="login">';
-    echo '        <a href="accounts/login/loginform.php">Login</a>';
+    echo '        <a href="' . $basePath . 'accounts/login/loginform.php">Login</a>';
     echo '    </div>';
     echo '</header>';
 }
