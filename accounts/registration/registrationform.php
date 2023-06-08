@@ -39,7 +39,7 @@
                     <button class="btn btn-submit">REGISTER</button>
                 </form>
                 <div class="card-footer">
-                    Return to the<a href="../login/loginform.php">LOGIN PAGE</a>
+                    Return to the<a class="footer-link" href="../login/loginform.php">LOGIN PAGE</a>
                 </div>
             </div>
         </main>
