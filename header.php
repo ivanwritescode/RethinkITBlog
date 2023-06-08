@@ -26,6 +26,7 @@ if (isset($_SESSION['id'])) {
         echo '    <div class="logo">';
         echo '        <h1>MiniBlog</h1>';
         echo '    </div>';
+        echo '<nav>';
         echo '    <div class="user-greeting">';
         echo '        Hi ' . $username;
         echo '    </div>';
@@ -33,6 +34,8 @@ if (isset($_SESSION['id'])) {
         echo '        <a href="' . $basePath . 'home.php">Home</a>';
         echo '        <a href="' . $basePath . 'accounts/logout.php">Logout</a>';
         echo '    </div>';
+
+        echo '</nav>';
         echo '</header>';
     } else {
         // Failed to fetch the username

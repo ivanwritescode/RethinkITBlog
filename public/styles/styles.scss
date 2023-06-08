@@ -1,0 +1,75 @@
+$btn-clr-delete:  #c62828;
+$btn-clr-edit: #2e7d32;
+$btn-clr-create: #2196f3;
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    padding-left: .5em;
+    padding-right: .5em;
+    background-color: #4267b2;
+    color: #fff;
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    nav {
+        display: flex;
+
+        .nav-links a {
+            margin-left: 1em;
+            font-style: none;
+            color: inherit
+        }
+    }    
+}
+
+body {
+    background: #efefef;
+}
+
+.container {
+    padding-top: 2em;
+    max-width: 60%;
+    margin: 0 auto;
+
+    .card {
+        background-color: #fff;
+        padding: 1em;
+        margin-bottom: 1em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+
+        .card-footer {
+            margin-top: 1.5em;
+        }
+    }
+}
+
+.btn {
+    padding: 5px 20px; 
+    color: #fff;
+    font-size: .8rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a.btn-delete {
+    background-color: $btn-clr-delete;
+}
+
+a.btn-edit {
+    background-color: $btn-clr-edit;
+}
+
+a.btn-create {
+    background-color: $btn-clr-create;
+}

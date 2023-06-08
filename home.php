@@ -39,8 +39,8 @@
                         </div>
                         <div class="card-footer">
                             <p>
-                                <a href="#" onclick="deletePost(<?php echo $post['id']; ?>)">DELETE</a>
-                                <a href="blogposts/updatepostform.php?blogpost_id=<?php echo $post['id']; ?>">EDIT</a>
+                                <a class="btn btn-delete" href="#" onclick="deletePost(<?php echo $post['id']; ?>)">DELETE</a>
+                                <a class="btn btn-edit" href="blogposts/updatepostform.php?blogpost_id=<?php echo $post['id']; ?>">EDIT</a>
                             </p>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
         ?>
 
         <div class="card">
-            <a href="blogposts/createpostform.php">CREATE NEW POST</a> 
+            <a class="btn btn-create" href="blogposts/createpostform.php">CREATE NEW POST</a> 
         </div>
     </div>
 </body>
