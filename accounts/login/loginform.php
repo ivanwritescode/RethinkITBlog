@@ -15,7 +15,7 @@
     </script>
 </head>
 <body>
-    <!-- <?php include 'header.php'; ?> -->
+    <?php include '../../header.php'; ?>
     <div class="container">
         <main>
             <h2 class="section-title">Login</h1>    
