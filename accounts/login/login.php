@@ -1,15 +1,29 @@
 <?php
+session_start(); // Start the session
+
 include '../../utils/db_connect.php';
 
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// Perform validation and authentication
-$sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-$result = $conn->query($sql);
+$sql = "SELECT * FROM users WHERE username = ? AND password = ?";
+$stmt = $conn->prepare($sql);
+
+// Bind the parameters and execute the statement
+$stmt->bind_param("ss", $username, $password);
+$stmt->execute();
+
+// Fetch the result
+$result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
-    // Authentication successful, redirect to a logged-in page
+    // Authentication successful, store the user ID in a session variable
+    $row = $result->fetch_assoc();
+    print_r($row);
+    $_SESSION['id'] = $row['id'];
+    echo $_SESSION['id'];
+
+    // Redirect the user to the home page or any other desired page
     header("Location: ../../home.php");
     exit;
 } else {
@@ -17,5 +31,6 @@ if ($result->num_rows > 0) {
     echo "Invalid username or password.";
 }
 
+$stmt->close();
 $conn->close();
 ?>

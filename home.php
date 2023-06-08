@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 </head>
 <body>
+    <?php include "header.php" ?>
     <div class="container">
         <?php
         include 'utils/db_connect.php';

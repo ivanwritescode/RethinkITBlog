@@ -7,7 +7,7 @@
     <title>Create a Post</title>
 </head>
 <body>
-    <!-- <?php include 'header.php'; ?> -->
+    <?php include '../header.php'; ?>
     <main>
         <h1>Create a Post!</h1>
         <div class="card">

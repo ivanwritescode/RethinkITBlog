@@ -7,7 +7,7 @@
     <title>Create a Post</title>
 </head>
 <body>
-    <!-- <?php include 'header.php'; ?> -->
+    <?php include '../header.php'; ?>
     <main>
         <?php
         $blogpostId = $_GET['blogpost_id'];
