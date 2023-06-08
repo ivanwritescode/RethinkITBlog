@@ -27,7 +27,7 @@ if (isset($_SESSION['id'])) {
         echo '        Hi ' . $username;
         echo '    </div>';
         echo '    <div class="nav-links">';
-        echo '        <a href="home.php">Home</a>';
+        echo '        <a href="' . dirname($_SERVER['PHP_SELF']) . '/../home.php">Home</a>';
         echo '        <a href="logout.php">Logout</a>';
         echo '    </div>';
         echo '</header>';
@@ -41,7 +41,7 @@ if (isset($_SESSION['id'])) {
         echo '        Hi User';
         echo '    </div>';
         echo '    <div class="nav-links">';
-        echo '        <a href="home.php">Home</a>';
+        echo '        <a href="' . dirname($_SERVER['PHP_SELF']) . '/../home.php">Home</a>';
         echo '        <a href="logout.php">Logout</a>';
         echo '    </div>';
         echo '</header>';
