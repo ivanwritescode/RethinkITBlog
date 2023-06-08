@@ -113,4 +113,11 @@ form textarea:focus {
 }
 .form-group input {
   padding: 0.5em;
+}
+
+.error-message {
+  background-color: rgba(198, 40, 40, 0.7882352941);
+  padding: 0.5em;
+  color: #fff;
+  margin-bottom: 1.5em;
 }/*# sourceMappingURL=styles.css.map */

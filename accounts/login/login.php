@@ -29,6 +29,7 @@ if ($result->num_rows > 0) {
 } else {
     // Authentication failed, display error message
     echo "Invalid username or password.";
+    header("Location: loginform.php?error=true");
 }
 
 $stmt->close();

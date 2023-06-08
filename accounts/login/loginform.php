@@ -21,6 +21,11 @@
             <h2 class="section-title">Login</h1>    
             <div class="card">
                 <div class="card-container">
+                    <?php
+                    if (isset($_GET['error'])) {
+                        echo '<p class="error-message">Invalid username or password</p>';
+                    }
+                    ?>
                     <form action="login.php" method="POST">
                         <p class="form-group"><input name="username" type="text" placeholder="Username" required></p>
                         <p class="form-group"><input name="password" type="password" placeholder="Password" required></p>
