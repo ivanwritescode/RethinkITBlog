@@ -1,4 +1,4 @@
-<?php include 'db_connect.php'; ?>
+<?php include '../../utils/db_connect.php'; ?>
 <?php
 	error_reporting(E_ALL);
 	ini_set('display_errors', 1);
@@ -13,7 +13,7 @@
 	<title>MiniBlog</title>
 </head>
 <body>
-	<?php include 'header.php'; ?>
+	<!-- <?php include '../../header.php'; ?> -->
 	<main>
         <div>
             <h1>Registration</h1>	
@@ -26,7 +26,7 @@
                     <input name="confirmpassword" type="password">
                     <button>REGISTER</button>
                 </form>
-                Return to the<a href="loginform.php">LOGIN PAGE</a>
+                Return to the<a href="../login/loginform.php">LOGIN PAGE</a>
             </div>
         </div>
 	</main>

@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php';
+include '../../utils/db_connect.php';
 
 // Retrieve form data
 $username = $_POST['username'];

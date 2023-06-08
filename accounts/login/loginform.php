@@ -8,7 +8,7 @@
     <script>
         function preventFormSubmit() {
             event.preventDefault(); // Prevent the form from being submitted
-            window.location.href = "registrationform.php"; // And redirect to register form page
+            window.location.href = "../registration/registrationform.php"; // And redirect to register form page
         }
     </script>
 </head>

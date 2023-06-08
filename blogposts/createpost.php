@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // TODO: Perform any necessary data validation and sanitization
     // TODO:  Associate an authorid later for each blog post
 
-    include 'db_connect.php';
+    include '../utils/db_connect.php';
 
     $sql = "INSERT INTO blogposts (title, content) VALUES ('$title', '$content')";
 

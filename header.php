@@ -3,6 +3,6 @@
         <h1>MiniBlog</h1>
     </div>
     <div class="login">
-        <a href="loginform.php">Login</a>
+        <a href="accounts/login/loginform.php">Login</a>
     </div>
 </header>
