@@ -10,7 +10,7 @@
     <div class="container">
         <div class="card">
             <div class="card-container">
-                <div class="card-head"><h1>Post Title</h1></div>
+                <div class="card-header"><h1>Post Title</h1></div>
                 <div class="card-body">
                     <p>Contents of the post</p>
                     <span>Date: 2nd of April 2020 09:13:32 AM</span>
@@ -22,9 +22,9 @@
                     </p>
                 </div> 
             </div>
-            <div class="card">
-                <button>CREATE NEW POST</button>
-            </div>
+        </div>
+        <div class="card">
+            <a href="blogposts/createpostform.php">CREATE NEW POST</a> 
         </div>
     </div>
 </body>
