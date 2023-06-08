@@ -29,7 +29,7 @@
                     </div>
                     <div class="card-footer">
                         <p>
-                            <button>DELETE</button>
+                            <button onclick="deletePost(<?php echo $post['id']; ?>)">DELETE</button>
                             <button>EDIT</button>
                         </p>
                     </div>
@@ -55,4 +55,14 @@
         </div>
     </div>
 </body>
+
+    <script>
+        function deletePost(postId) {
+            var confirmDelete = confirm("Are you sure you want to delete this post?");
+            if (confirmDelete) {
+                // Redirect to the deletepost.php page passing the postId as a parameter
+                window.location.href = "blogposts/deletepost.php?id=" + postId;
+            }
+        }
+    </script>
 </html>
