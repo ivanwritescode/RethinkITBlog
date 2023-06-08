@@ -18,8 +18,10 @@
     <?php include '../../header.php'; ?>
     <div class="container">
         <main>
-            <h2 class="section-title">Login</h1>    
             <div class="card">
+                <div class="card-header">
+                    <h2>Login</h1>    
+                </div>
                 <div class="card-container">
                     <?php
                     if (isset($_GET['error'])) {
