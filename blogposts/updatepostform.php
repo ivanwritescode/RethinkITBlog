@@ -23,22 +23,26 @@
             if ($result->num_rows > 0) {
                 $post = $result->fetch_assoc();
             ?>
-            <h2 class="section-title">Edit Post - <?php echo $post['title']; ?></h1>
-            <div class="card">
-                <form action="updatepost.php" method="POST">
-                    <p class="form-group">
-                        <label for="title">Enter New Title:</label>
-                        <input type="text" id="title" name="title" value="<?php echo $post['title']; ?>" required>
-                    </p>
-                    <br>
-                    <p class="form-group">
-                        <label for="content">Enter New Content:</label>
-                        <textarea id="content" name="content" required><?php echo $post['content']; ?></textarea>
-                    </p>
-                    <br>
-                    <input type="hidden" name="post_id" value="<?php echo $post['id']; ?>">
-                    <button type="submit">SAVE</button>
-                </form>
+            <div class="card card-bg-inherit">
+                <div class="card-header">
+                    <h2>Edit Post - <?php echo $post['title']; ?></h1>
+                </div>
+                <div class="card-body">
+                    <form action="updatepost.php" method="POST">
+                        <p class="form-group">
+                            <label for="title">Enter New Title:</label>
+                            <input type="text" id="title" name="title" value="<?php echo $post['title']; ?>" required>
+                        </p>
+                        <br>
+                        <p class="form-group">
+                            <label for="content">Enter New Content:</label>
+                            <textarea id="content" name="content" required><?php echo $post['content']; ?></textarea>
+                        </p>
+                        <br>
+                        <input type="hidden" name="post_id" value="<?php echo $post['id']; ?>">
+                        <button class="btn btn-submit" type="submit">SAVE</button>
+                    </form>
+                </div>
                 <?php
                 } else {
                     echo "Post not found.";
