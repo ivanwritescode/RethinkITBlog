@@ -13,39 +13,51 @@
         <?php
         include 'utils/db_connect.php';
 
-        $sql = "SELECT * FROM blogposts";
-        $result = $conn->query($sql);
+        // Check if the user ID session variable is set
+        if (isset($_SESSION['id'])) {
+            $userId = $_SESSION['id']; // Get the user ID from the session
 
-        // Check if there are any posts
-        if ($result->num_rows > 0) {
-            // Loop through each post and generate a card
-            while ($post = $result->fetch_assoc()) {
-        ?>
-            <div class="card">
-                <div class="card-container">
-                    <div class="card-header"><h1><?php echo $post['title']; ?></h1></div>
-                    <div class="card-body">
-                        <p><?php echo $post['content']; ?></p>
-                        <p>Date: <span id="post-date-<?php echo $post['id']; ?>"><?php echo $post['date']; ?></span></p>
-                    </div>
-                    <div class="card-footer">
-                        <p>
-                            <a href="#" onclick="deletePost(<?php echo $post['id']; ?>)">DELETE</a>
-                            <a href="blogposts/updatepostform.php?blogpost_id=<?php echo $post['id']; ?>">EDIT</a>
-                        </p>
+            $sql = "SELECT * FROM blogposts WHERE authorid = ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("i", $userId);
+            $stmt->execute();
+            $result = $stmt->get_result();
+
+            // Check if there are any posts
+            if ($result->num_rows > 0) {
+                // Loop through each post and generate a card
+                while ($post = $result->fetch_assoc()) {
+            ?>
+                <div class="card">
+                    <div class="card-container">
+                        <div class="card-header"><h1><?php echo $post['title']; ?></h1></div>
+                        <div class="card-body">
+                            <p><?php echo $post['content']; ?></p>
+                            <p>Date: <span id="post-date-<?php echo $post['id']; ?>"><?php echo $post['date']; ?></span></p>
+                        </div>
+                        <div class="card-footer">
+                            <p>
+                                <a href="#" onclick="deletePost(<?php echo $post['id']; ?>)">DELETE</a>
+                                <a href="blogposts/updatepostform.php?blogpost_id=<?php echo $post['id']; ?>">EDIT</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <script>
-                // Format and display the date using Moment.js
-                var postDate = moment("<?php echo $post['date']; ?>").format('Do [of] MMMM YYYY hh:mm:ss A');
-                document.getElementById("post-date-<?php echo $post['id']; ?>").textContent = postDate;
-            </script>
-        <?php
+                <script>
+                    // Format and display the date using Moment.js
+                    var postDate = moment("<?php echo $post['date']; ?>").format('Do [of] MMMM YYYY hh:mm:ss A');
+                    document.getElementById("post-date-<?php echo $post['id']; ?>").textContent = postDate;
+                </script>
+            <?php
+                }
+            } else {
+                echo "No posts found.";
             }
+
+            $stmt->close();
         } else {
-            echo "No posts found.";
+            echo "User not logged in.";
         }
 
         $conn->close();
