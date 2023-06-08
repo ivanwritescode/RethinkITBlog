@@ -12,3 +12,12 @@ formGroups.forEach(formGroup => {
         label.classList.remove('active');
     });
 });
+
+
+// JavaScript code that dynamically updates textarea height based on the content
+const textarea = document.getElementById('content');
+
+textarea.addEventListener('input', () => {
+textarea.style.height = 'auto'; // Reset height to auto to recalculate height based on content
+textarea.style.height = textarea.scrollHeight + 'px'; // Set the height to match the content
+});

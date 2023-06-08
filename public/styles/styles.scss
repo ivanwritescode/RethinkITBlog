@@ -169,9 +169,6 @@ form {
     border-bottom: 1px solid #efefef;
     padding-bottom: 1em;
     margin-bottom: 1em;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .card-footer {
@@ -190,4 +187,9 @@ form {
 
 .text-center {
     text-align: center;
+}
+
+#content {
+    resize: vertical;
+    min-height: 1em;
 }

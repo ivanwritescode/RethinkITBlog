@@ -146,9 +146,6 @@ form textarea:focus {
   border-bottom: 1px solid #efefef;
   padding-bottom: 1em;
   margin-bottom: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .card-footer {
@@ -165,4 +162,9 @@ form textarea:focus {
 
 .text-center {
   text-align: center;
+}
+
+#content {
+  resize: vertical;
+  min-height: 1em;
 }/*# sourceMappingURL=styles.css.map */
