@@ -24,7 +24,7 @@ if (isset($_SESSION['id'])) {
         // Display the header with the username
         echo '<header>';
         echo '    <div class="logo">';
-        echo '        <h1>MiniBlog</h1>';
+        echo '        <h1><a href="'. $basePath .'home.php">MiniBlog</a></h1>';
         echo '    </div>';
         echo '<nav>';
         echo '    <div class="user-greeting">';
@@ -41,7 +41,7 @@ if (isset($_SESSION['id'])) {
         // Failed to fetch the username
         echo '<header>';
         echo '    <div class="logo">';
-        echo '        <h1>MiniBlog</h1>';
+        echo '        <h1><a href="'. $basePath .'home.php">MiniBlog</a></h1>';
         echo '    </div>';
         echo '<nav>';
         echo '    <div class="user-greeting">';
@@ -61,7 +61,7 @@ if (isset($_SESSION['id'])) {
     // Session variable is not set, the user is not logged in
     echo '<header>';
     echo '    <div class="logo">';
-    echo '        <h1>MiniBlog</h1>';
+    echo '        <h1><a href="#">MiniBlog</a></h1>';
     echo '    </div>';
     echo '<nav>';
     echo '    <div class="nav-links">';
