@@ -15,13 +15,13 @@
             <h2 class="section-title">Create a Post!</h1>
             <div class="card card-bg-inherit">
                 <form action="createpost.php" method="POST">
-                    <p>
-                        <label for="title">Enter Title:</label>
+                    <p class="form-group">
+                        <label for="title">Enter Title</label>
                         <input type="text" id="title" name="title" required>
                     </p>
                     <br>
-                    <p>
-                        <label for="content">Enter Content:</label>
+                    <p class="form-group">
+                        <label for="content">Enter Content</label>
                         <textarea id="content" name="content" required></textarea>
                     </p>
                     <br>
@@ -30,5 +30,7 @@
             </div>
         </main>
     </div>
+
+    <script src="../public/js/formfields.js"></script>
 </body>
 </html>
