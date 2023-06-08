@@ -124,6 +124,7 @@ form textarea:focus {
 }
 .form-group input {
   padding: 0.5em;
+  display: block;
 }
 
 .error-message {

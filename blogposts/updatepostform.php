@@ -30,12 +30,12 @@
                 <div class="card-body">
                     <form action="updatepost.php" method="POST">
                         <p class="form-group">
-                            <label for="title">Enter New Title:</label>
+                            <label for="title">Enter New Title</label>
                             <input type="text" id="title" name="title" value="<?php echo $post['title']; ?>" required>
                         </p>
                         <br>
                         <p class="form-group">
-                            <label for="content">Enter New Content:</label>
+                            <label for="content">Enter New Content</label>
                             <textarea id="content" name="content" required><?php echo $post['content']; ?></textarea>
                         </p>
                         <br>
