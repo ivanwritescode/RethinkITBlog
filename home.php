@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -56,13 +55,16 @@
     </div>
 </body>
 
-    <script>
-        function deletePost(postId) {
-            var confirmDelete = confirm("Are you sure you want to delete this post?");
-            if (confirmDelete) {
-                // Redirect to the deletepost.php page passing the postId as a parameter
-                window.location.href = "blogposts/deletepost.php?id=" + postId;
-            }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+<script>
+    function deletePost(postId) {
+        var confirmDelete = confirm("Are you sure you want to delete this post?");
+        if (confirmDelete) {
+            // Redirect to the deletepost.php page passing the postId as a parameter
+            window.location.href = "blogposts/deletepost.php?id=" + postId;
         }
-    </script>
+    }
+</script>
+
 </html>
