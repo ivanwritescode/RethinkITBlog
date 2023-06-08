@@ -23,8 +23,10 @@ This repository contains my solution for the skills examination for RethinkIT.
 ├── dbassets/
 │   └── rethinkittestminiblogsite.sql
 ├── public/
-│   └── styles/
-│       └── styles.scss
+│   ├── styles/
+│   │   └── styles.scss
+│   └── js/
+│       └── formfields.js
 ├── utils/
 │   └── db_connect.php
 ├── header.php
