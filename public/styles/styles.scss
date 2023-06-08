@@ -98,6 +98,7 @@ body {
 form {
     label {
         opacity: .5;
+        font-size: .8rem;
 
         &:focus {
             opacity: 1;
@@ -118,6 +119,7 @@ form {
         display: block;
         width: 100%;
         border-bottom: 1px solid green;
+        padding: .5em; 
 
         &:focus {
             outline: none;
