@@ -54,7 +54,7 @@
             <?php
                 }
             } else {
-                echo "No posts found.";
+                echo "<p class='info-message'>No posts found.</p>";
             }
 
             $stmt->close();

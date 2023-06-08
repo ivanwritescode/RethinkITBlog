@@ -134,6 +134,13 @@ form textarea:focus {
   margin-bottom: 1.5em;
 }
 
+.info-message {
+  background-color: rgba(35, 128, 214, 0.662745098);
+  padding: 0.5em;
+  color: #fff;
+  margin-bottom: 1.5em;
+}
+
 .card-header {
   border-bottom: 1px solid #efefef;
   padding-bottom: 1em;
