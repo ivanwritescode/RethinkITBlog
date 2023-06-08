@@ -1,5 +1,8 @@
 <?php
-session_start(); // Start the session
+
+if (!isset($_SESSION)) {
+    session_start(); // Start the session
+}
 
 // Specify the base path here
 $basePath = "http://localhost/RethinkITBlog/";
