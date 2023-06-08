@@ -89,6 +89,9 @@ form label {
 form label:focus {
   opacity: 1;
 }
+form .form-group label.active {
+  color: #2e7d32;
+}
 form input {
   background: transparent;
   width: 100%;

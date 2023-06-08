@@ -105,6 +105,10 @@ form {
         }
     }
 
+    .form-group label.active {
+        color: $btn-clr-edit; 
+    }
+
     input {
         background: transparent;
         width: 100%;
