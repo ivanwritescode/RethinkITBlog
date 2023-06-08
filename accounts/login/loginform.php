@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiniBlog - Login</title>
+	<link rel="stylesheet" href="../../public/styles/reset.css">
+	<link rel="stylesheet" href="../../public/styles/styles.css">
     <script>
         function preventFormSubmit() {
             event.preventDefault(); // Prevent the form from being submitted
