@@ -18,7 +18,7 @@
                 <label for="content">Enter Content:</label>
                 <textarea id="content" name="content" required></textarea>
                 <br>
-                <button type="submit">Submit</button>
+                <button type="submit">POST</button>
             </form>
         </div>
     </main>
