@@ -16,17 +16,23 @@
 </head>
 <body>
     <!-- <?php include 'header.php'; ?> -->
-    <main>
-        <h1>Login</h1>    
-        <div class="card">
-            <form action="login.php" method="POST">
-                <input name="username" type="text" placeholder="Username" required>
-                <input name="password" type="password" placeholder="Password" required>
-                <button type="submit">LOGIN</button>
-                <button type="submit" onClick="preventFormSubmit()">REGISTER</button>
-            </form>
-            <span>Currently logged out</span>
-        </div>
-    </main>
+    <div class="container">
+        <main>
+            <h2 class="section-title">Login</h1>    
+            <div class="card">
+                <div class="card-container">
+                    <form action="login.php" method="POST">
+                        <p class="form-group"><input name="username" type="text" placeholder="Username" required></p>
+                        <p class="form-group"><input name="password" type="password" placeholder="Password" required></p>
+                        <button class="btn btn-submit" type="submit">LOGIN</button>
+                        <button class="btn btn-submit" type="submit" onClick="preventFormSubmit()">REGISTER</button>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <span>Currently logged out</span>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

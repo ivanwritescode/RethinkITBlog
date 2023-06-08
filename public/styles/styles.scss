@@ -123,3 +123,11 @@ form {
             background-color: inherit;
         }
 }
+
+.form-group {
+    margin-bottom: 1em !important;
+
+    input {
+        padding: .5em;
+    }
+}

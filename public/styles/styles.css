@@ -103,4 +103,11 @@ form textarea:focus {
 }
 .card.card-bg-inherit textarea {
   background-color: inherit;
+}
+
+.form-group {
+  margin-bottom: 1em !important;
+}
+.form-group input {
+  padding: 0.5em;
 }/*# sourceMappingURL=styles.css.map */
