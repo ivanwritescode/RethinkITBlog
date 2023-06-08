@@ -140,4 +140,8 @@ form textarea:focus {
 .card-footer a:hover {
   opacity: 0.7;
   text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

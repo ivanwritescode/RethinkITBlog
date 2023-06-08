@@ -18,7 +18,7 @@
 	<!-- <?php include '../../header.php'; ?> -->
     <div class="container">
         <main>
-            <h1 class="section-title">Registration</h1>	
+            <h1 class="section-title text-center">Registration</h1>	
             <div class="card">
                 <div class="card-header">
                     <h2>See the Registration Rules</h2>
