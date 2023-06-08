@@ -1,0 +1,1 @@
+Hello. This is my solution for the skills examination for RethinkIT. Thanks
