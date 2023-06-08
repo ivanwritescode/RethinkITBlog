@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="../../public/styles/styles.css">
 </head>
 <body>
-	<!-- <?php include '../../header.php'; ?> -->
+	<?php include '../../header.php'; ?>
     <div class="container">
         <main>
             <h1 class="section-title text-center">Registration</h1>	
