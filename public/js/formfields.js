@@ -24,6 +24,6 @@ function adjustTextareaHeight() {
 window.addEventListener('DOMContentLoaded', () => {
   adjustTextareaHeight(); // Adjust the textarea height on page load
 
-  const textarea = document.getElementById('myTextarea');
+  const textarea = document.getElementById('content');
   textarea.addEventListener('input', adjustTextareaHeight); // Adjust the textarea height on input
 });
