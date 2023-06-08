@@ -29,7 +29,7 @@
                     }
                     ?>
                     <form action="login.php" method="POST">
-                        <p class="form-group"><input name="username" type="text" placeholder="Username" required></p>
+                        <p class="form-group"><input name="email" type="email" placeholder="Enter Email" required></p>
                         <p class="form-group"><input name="password" type="password" placeholder="Password" required></p>
                         <button class="btn btn-submit" type="submit">LOGIN</button>
                         <button class="btn btn-submit" type="submit" onClick="preventFormSubmit()">REGISTER</button>

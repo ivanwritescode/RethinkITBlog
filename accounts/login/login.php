@@ -3,10 +3,10 @@ session_start(); // Start the session
 
 include '../../utils/db_connect.php';
 
-$username = $_POST['username'];
+$username = $_POST['email'];
 $password = $_POST['password'];
 
-$sql = "SELECT * FROM users WHERE username = ? AND password = ?";
+$sql = "SELECT * FROM users WHERE email = ? AND password = ?";
 $stmt = $conn->prepare($sql);
 
 // Bind the parameters and execute the statement
@@ -28,7 +28,7 @@ if ($result->num_rows > 0) {
     exit;
 } else {
     // Authentication failed, display error message
-    echo "Invalid username or password.";
+    echo "Invalid email or password.";
     header("Location: loginform.php?error=true");
 }
 
