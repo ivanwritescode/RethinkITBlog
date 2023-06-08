@@ -26,11 +26,15 @@
             <h2 class="section-title">Edit Post - <?php echo $post['title']; ?></h1>
             <div class="card">
                 <form action="updatepost.php" method="POST">
-                    <label for="title">Enter New Title:</label>
-                    <input type="text" id="title" name="title" value="<?php echo $post['title']; ?>" required>
+                    <p class="form-group">
+                        <label for="title">Enter New Title:</label>
+                        <input type="text" id="title" name="title" value="<?php echo $post['title']; ?>" required>
+                    </p>
                     <br>
-                    <label for="content">Enter New Content:</label>
-                    <textarea id="content" name="content" required><?php echo $post['content']; ?></textarea>
+                    <p class="form-group">
+                        <label for="content">Enter New Content:</label>
+                        <textarea id="content" name="content" required><?php echo $post['content']; ?></textarea>
+                    </p>
                     <br>
                     <input type="hidden" name="post_id" value="<?php echo $post['id']; ?>">
                     <button type="submit">SAVE</button>
