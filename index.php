@@ -14,8 +14,5 @@
 </head>
 <body>
 	<?php include 'header.php'; ?>
-	<main>
-		<!-- <?php include 'registrationform.php' ?> -->
-	</main>
 </body>
 </html>
