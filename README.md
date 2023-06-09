@@ -9,10 +9,10 @@ This repository contains my solution for the skills examination for RethinkIT.
 ├── accounts/
 │   ├── login/
 │   │   ├── login.php
-│   │   └── registration.php
+│   │   └── loginform.php
 │   ├── registration/
 │   │   ├── register.php
-│   │   └── registration.php
+│   │   └── registrationform.php
 │   └── logout.php
 ├── blogposts/
 │   ├── createpost.php
